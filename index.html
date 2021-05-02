@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sleep Debt Calculator</title>
+</head>
+<body>
+    <div id="banner">
+        <div class="transbox">
+            <h1>Sleep Debt</h1>
+            <div class="def">
+                <h3>Sleep debt or sleep deficit is the cumulative effect of not getting enough sleep. A large sleep debt may lead to mental or physical fatigue.</h3>
+                <h3>Sleep debt is the difference between the amount of sleep you should be getting and the amount you actually get.</h3>
+            </div>
+            <a href="#sleepcalc">Calculate</a>
+        </div>
+    </div>
+    <div id="sleepcalc">
+        <h2>Enter the Number of Hours you sleep on each day.</h2>
+        <form action="" onsubmit="calculateDebt()">
+            <div>
+                <label for="mon">Monday</label>
+                <input type="text" placeholder="6 or 7" required id="d1">
+            </div>
+            <div>
+                <label for="mon">Tuesday</label>
+                <input type="text" placeholder="6 or 7" required id="d2">
+            </div>
+            <div>
+                <label for="mon">Wednesday</label>
+                <input type="text" placeholder="6 or 7" required id="d3">
+            </div>
+            <div>
+                <label for="mon">Thrusday</label>
+                <input type="text" placeholder="6 or 7" required id="d4">
+            </div>
+            <div>
+                <label for="mon">Friday</label>
+                <input type="text" placeholder="6 or 7" required id="d5">
+            </div>
+            <div>
+                <label for="mon">Saturday</label>
+                <input type="text" placeholder="6 or 7" required id="d6">
+            </div>
+            <div>
+                <label for="mon">Sunday</label>
+                <input type="text" placeholder="6 or 7" required id="d7">
+            </div>
+            <button type="submit">Debt</button>
+        </form>
+        <h1 id="result"></h1>
+        <h3>Created with <span>❤</span> By Vipul.</h3>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

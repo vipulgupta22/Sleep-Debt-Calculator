@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://image.freepik.com/free-photo/young-woman-resting-bed-morning_1303-16489.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner .transbox {
+    background-color:black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    display: grid;
+    place-items: center;
+}
+#banner .def{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#banner h1{
+    color: red;
+    font-size: 90px;
+    padding: 20px;
+}
+#banner h3{
+    color: orangered;
+    padding: 10px;
+    text-align: center;
+}
+#banner a{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+#banner a:hover{
+    background-color:red;
+    transition: all 0.5s ease;
+}
+@media(max-width:500px){
+    #banner h1{
+        font-size: 50px;
+    }
+}
+
+
+#sleepcalc{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: red;
+}
+#sleepcalc h2{
+    text-align: center;
+}
+#sleepcalc form {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sleepcalc form div{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#sleepcalc form div label {
+    font-size: 30px;
+    padding: 10px;
+}
+#sleepcalc form div input {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid black;
+    text-align: center;
+}
+#sleepcalc form button{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#sleepcalc h1, #sleepcalc h3{
+    padding: 10px;
+    text-align: center;
+}
+#sleepcalc h3 span{
+    color: blue;
+}
+#sleepcalc h1{
+    display: none;
+}
+@media(max-width:420px){
+    #sleepcalc form div label {
+        font-size: 20px;
+    }
+    #sleepcalc form div input {
+        font-size: 8px;
+    }
+}
+@media(max-width:300px){
+    #sleepcalc form div label {
+        font-size: 15px;
+    }
+    #sleepcalc form div input {
+        font-size: 4px;
+    }
+    #banner h1{
+        font-size: 40px;
+    }
+}
