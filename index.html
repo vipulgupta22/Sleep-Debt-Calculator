@@ -15,7 +15,7 @@
                 <h3>Sleep debt or sleep deficit is the cumulative effect of not getting enough sleep. A large sleep debt may lead to mental or physical fatigue.</h3>
                 <h3>Sleep debt is the difference between the amount of sleep you should be getting and the amount you actually get.</h3>
             </div>
-            <a href="#sleepcalc">Calculate</a>
+            <a href="#sleepcalc" onclick="document.getElementById('debtcalc').click()">Calculate</a>
         </div>
     </div>
     <div id="sleepcalc">
@@ -23,33 +23,33 @@
         <form action="#sleepcalc" onsubmit="calculateDebt()">
             <div>
                 <label for="mon">Monday</label>
-                <input type="text" placeholder="6 or 7" required id="d1">
+                <input type="text" placeholder="6 or 7" required id="d1" value="7">
             </div>
             <div>
                 <label for="mon">Tuesday</label>
-                <input type="text" placeholder="6 or 7" required id="d2">
+                <input type="text" placeholder="6 or 7" required id="d2" value="7">
             </div>
             <div>
                 <label for="mon">Wednesday</label>
-                <input type="text" placeholder="6 or 7" required id="d3">
+                <input type="text" placeholder="6 or 7" required id="d3" value="7">
             </div>
             <div>
                 <label for="mon">Thrusday</label>
-                <input type="text" placeholder="6 or 7" required id="d4">
+                <input type="text" placeholder="6 or 7" required id="d4" value="7">
             </div>
             <div>
                 <label for="mon">Friday</label>
-                <input type="text" placeholder="6 or 7" required id="d5">
+                <input type="text" placeholder="6 or 7" required id="d5" value="7">
             </div>
             <div>
                 <label for="mon">Saturday</label>
-                <input type="text" placeholder="6 or 7" required id="d6">
+                <input type="text" placeholder="6 or 7" required id="d6" value="7">
             </div>
             <div>
                 <label for="mon">Sunday</label>
-                <input type="text" placeholder="6 or 7" required id="d7">
+                <input type="text" placeholder="6 or 7" required id="d7" value="7">
             </div>
-            <button type="submit">Debt</button>
+            <button type="submit" id="debtcalc">Debt</button>
         </form>
         <h1 id="result">A good night's sleep is incredibly important for your health.</h1>
         <h3>Created with <span>❤</span> By Vipul.</h3>
