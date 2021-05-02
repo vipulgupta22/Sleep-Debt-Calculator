@@ -19,8 +19,7 @@ const getActual = () =>{
     return 8*7;
 }
 
-const getPrintResult = (idealHours,actualSleepHours)=>{ 
-    document.getElementById('result').style.display = 'block';
+const getPrintResult = (idealHours,actualSleepHours)=>{
     if (actualSleepHours === idealHours) {
         document.getElementById('result').innerHTML = `You are getting the perfect amount of sleep ${actualSleepHours} hours.`; 
     } 
