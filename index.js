@@ -9,6 +9,7 @@ function calculateDebt(){
     const totalSleptHours = getSum(mon,tues,wed,thrus,fri,sat,sun);
     const actualSleepHours = getActual();
     getPrintResult(actualSleepHours,totalSleptHours);
+    clearInputField();
 }
 
 const getSum = (g1,g2,g3,g4,g5,g6,g7)=>{
@@ -20,6 +21,7 @@ const getActual = () =>{
 }
 
 const getPrintResult = (idealHours,actualSleepHours)=>{
+    document.getElementById('result').style.display = 'block';
     if (actualSleepHours === idealHours) {
         document.getElementById('result').innerHTML = `You are getting the perfect amount of sleep ${actualSleepHours} hours.`; 
     } 
@@ -29,4 +31,17 @@ const getPrintResult = (idealHours,actualSleepHours)=>{
     else {
         document.getElementById('result').innerHTML = `You are full of energy. You slept ${actualSleepHours-idealHours} hours more than you needed this week.`;
     }
+}
+
+function getempty(){
+    document.getElementById('debtcalc').click();
+}
+function clearInputField(){
+    document.getElementById('d1').value = '';
+    document.getElementById('d2').value = '';
+    document.getElementById('d3').value = '';
+    document.getElementById('d4').value = '';
+    document.getElementById('d5').value = '';
+    document.getElementById('d6').value = '';
+    document.getElementById('d7').value = '';
 }
